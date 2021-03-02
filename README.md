@@ -17,7 +17,7 @@ Vous pouvez créer un pull request pour corriger l'erreur, ou si vous ne savez p
 
 # Testé
 
-Testé sur la version SaberFactions-2.6.2-STABLE (23 décembre 2020)
+Testé sur la version SaberFactions-2.6.5-BETA (2 mars 2021)
 Spigot: StellarSpigot (TacoSpigot 1.8.8) et GemSpigot (TacoSpgigot 1.8.8)
 
 
