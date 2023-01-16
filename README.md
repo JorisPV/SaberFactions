@@ -1,4 +1,4 @@
-# SaberFactions 4.0.1-RC - 1.8 -1.19.x
+# Traduction SaberFactions 4.0.1-RC - 1.8 -1.19.x
 
 ### Traduction en français du plugin SaberFactions 4.0.1-RC
 
