@@ -15,9 +15,9 @@ Il manque principalement des commandes Administrateurs, cela sera traduit dans l
 Vous pouvez créer un pull request pour corriger l'erreur, ou si vous ne savez pas faire, de créer une issue afin que je puisse corriger.
 https://github.com/Acenox/SaberFactions/issues
 
-# Testé
+# Testé le 17 janvier 2023
 
-Testé sur la version SaberFactions-4.0.1-RC (16 janvier 2023)
-Spigot: PaperSpigot - 1.19.3
+Testé sur la version SaberFactions-4.0.1-RC
+Spigot: PaperSpigot - 1.19.3 & PaperSpigot 1.8.8
 
 
