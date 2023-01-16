@@ -6,6 +6,9 @@
 
 # NOTE: IF YOU WANT TO REMOVE AN UPGRADE SET THE SLOT TO -1
 
+#
+# Traduction par Acenox
+
 fupgrades:
   Enabled: true
   usePointsAsCurrency: false

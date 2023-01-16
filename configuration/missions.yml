@@ -3,6 +3,8 @@
 # |                Faction Missions                      | #
 # +------------------------------------------------------+ #
 # ###########################################################
+#
+# Traduction par Acenox
 MissionGUISize: 4
 Missions-Enabled: true
 Missions-GUI-Title: '&cMissions'

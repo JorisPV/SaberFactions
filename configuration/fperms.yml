@@ -22,6 +22,8 @@
 # indicating the current relation (Uses relation item placeholder)
 # 2nd: Dummy items, these items server no other purpose than to look good, they have their own
 # items defined in dummy items, and can later be assigned to specific slots in the GUI's
+#
+# Traduction par Acenox
 fperm-gui:
   denyCommandsToEditPerms: false
   relation:
