@@ -1,0 +1,421 @@
+# ###########################################################
+# +------------------------------------------------------+ #
+# |                  Faction Upgrades                    | #
+# +------------------------------------------------------+ #
+# ###########################################################
+
+# NOTE: IF YOU WANT TO REMOVE AN UPGRADE SET THE SLOT TO -1
+
+fupgrades:
+  Enabled: true
+  usePointsAsCurrency: false
+  MainMenu:
+    Rows: 5
+    Title: '&cFactionRankup'
+    DummyItem:
+      Name: '&f'
+      Type: BLACK_STAINED_GLASS_PANE
+      Lore:
+      - ' '
+    Crops:
+      Max-Level: 3
+      Crop-Boost:
+        level-1: 10
+        level-2: 20
+        level-3: 30
+      Cost:
+        level-1: 250000
+        level-2: 500000
+        level-3: 750000
+      DisplayItem:
+        Name: '&bAméliorer la vitesse de Farm'
+        Type: WHEAT
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Améliorer la vitesse de Farm'
+        - '&7dans les claims uniquement'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b10% &fde chance'
+        - '&f  - Prix: &a250 000$'
+        - '&fNiveau 2 - &b20% &fde chance'
+        - '&f  - Prix: &a500 000$'
+        - '&fNiveau 3 - &b30% &fde chance'
+        - '&f  - Prix: &a750 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 31
+    Fall-Damage:
+      Cost:
+        level-1: 2000000
+      DisplayItem:
+        Name: '&bDésactivation des dégâts de chute'
+        Type: FEATHER # MUST BE PLAYER_HEAD FOR TEXTURE TO WORK!
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Enlève les dégats de chute dans'
+        - '&7l''essemble des claims de votre Faction'
+        - ''
+        - '&fPrix - &a2 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 14
+    SpawnerChunks:
+      Max-Level: 3
+      chunk-limit:
+        level-1: 2
+        level-2: 3
+        level-3: 4
+      Cost:
+        level-1: 100000
+        level-2: 300000
+        level-3: 500000
+      DisplayItem:
+        Name: '&bAugmente la limite de Spawner'
+        Type: MOB_SPAWNER
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Augmente la limite de Spawner'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b2 &fSpawners'
+        - '&f  - Prix: &a100 000$'
+        - '&fNiveau 2 - &b3 &fSpawners'
+        - '&f  - Prix: &a300 000$'
+        - '&fNiveau 3 - &b4 &fSpawners'
+        - '&f  - Prix: &a500 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 12
+    EXP:
+      Max-Level: 4
+      EXP-Boost:
+        level-1: 1.2
+        level-2: 1.4
+        level-3: 1.6
+        level-4: 2.0
+      Cost:
+        level-1: 500000
+        level-2: 500000
+        level-3: 500000
+        level-4: 500000
+      DisplayItem:
+        Name: '&bAméliorer le gain d''xp'
+        Type: EXP_BOTTLE
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Améliorer le gain d''xp en tuant des mobs.'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &bx1.2'
+        - '&f  - Prix: &a500 000$'
+        - '&fNiveau 2 - &bx1.4'
+        - '&f  - Prix: &a500 000$'
+        - '&fNiveau 3 - &bx1.6'
+        - '&f  - Prix: &a500 000$'
+        - '&fNiveau 4 - &bx2.0'
+        - '&f  - Prix: &a500 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 32
+    Power:
+      Max-Level: 3
+      Power-Boost:
+        level-1: 100.0
+        level-2: 200.0
+        level-3: 300.0
+      Cost:
+        level-1: 1000000
+        level-2: 2000000
+        level-3: 3000000
+      DisplayItem:
+        Name: '&bPower de Faction'
+        Type: NETHER_STAR # MUST BE PLAYER_HEAD FOR TEXTURE TO WORK!
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Augmente la limite de Power de votre Faction'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b100 &fPower'
+        - '&f  - Prix: &a1 000 000$'
+        - '&fNiveau 2 - &b200 &fPower'
+        - '&f  - Prix: &a2 000 000$'
+        - '&fNiveau 3 - &b300 &fPower'
+        - '&f  - Prix: &a3 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 22
+    Redstone:
+      Max-Level: 1
+      Cost:
+        level-1: 1000000
+      DisplayItem:
+        Name: '&cRedstone'
+        Type: REDSTONE
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7La redstone ne se casse plus'
+        - '&7lorsqu''il y a de l''eau'
+        - ''
+        - '&fPrix - &a1 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 23
+    Spawners:
+      Max-Level: 3
+      Spawner-Boost:
+        # This is a Percentage so .10 means 10% lowered spawner delay!
+        level-1: 0.1
+        level-2: 0.2
+        level-3: 0.3
+      Cost:
+        level-1: 1000000
+        level-2: 2000000
+        level-3: 3000000
+      DisplayItem:
+        Name: '&bAméliorer la vitesse des spawners'
+        Type: MOB_SPAWNER
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Réduire le temps de spawn des spawners'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b10% &fde chance'
+        - '&f  - Prix: &a1 000 000$'
+        - '&fNiveau 2 - &b20% &fde chance'
+        - '&f  - Prix: &a2 000 000$'
+        - '&fNiveau 3 - &b30% &fde chance'
+        - '&f  - Prix: &a3 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 30
+    DamageReduct:
+      Max-Level: 3
+      DamageReductPercent:
+        level-1: 3
+        level-2: 5
+        level-3: 7
+      Cost:
+        level-1: 2000000
+        level-2: 4000000
+        level-3: 6000000
+      DisplayItem:
+        Name: '&bRéduire les dégats'
+        Type: GOLD_CHESTPLATE
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Permet de réduire les dégats reçus dans ses claims'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b3%'
+        - '&f  - Prix: &a2 000 000$'
+        - '&fNiveau 2 - &b5%'
+        - '&f  - Prix: &a4 000 000$'
+        - '&fNiveau 3 - &b7%'
+        - '&f  - Prix: &a6 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 7
+    DamageIncrease:
+      Max-Level: 3
+      DamageIncreasePercent:
+        level-1: 3
+        level-2: 5
+        level-3: 7
+      Cost:
+        level-1: 2000000
+        level-2: 4000000
+        level-3: 6000000
+      DisplayItem:
+        Name: '&bAugmenter les dégats'
+        Type: DIAMOND_SWORD
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Permet d''augmenter les dégats reçus dans ses claims'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b3%'
+        - '&f  - Prix: &a2 000 000$'
+        - '&fNiveau 2 - &b5%'
+        - '&f  - Prix: &a4 000 000$'
+        - '&fNiveau 3 - &b7%'
+        - '&f  - Prix: &a6 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 1
+    TNT:
+      Max-Level: 3
+      tnt-limit:
+        level-1: 1000000
+        level-2: 2000000
+        level-3: 5000000
+      Cost:
+        level-1: 2000000
+        level-2: 4000000
+        level-3: 6000000
+      DisplayItem:
+        Name: '&bAméliorer la bank de TNT'
+        Type: TNT
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Permet d''augmenter la limite de'
+        - '&7la bank de TNT de la Faction'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b1 000 000 TNT'
+        - '&f  - Prix: &a2 000 000$'
+        - '&fNiveau 2 - &b2 000 000 TNT'
+        - '&f  - Prix: &a4 000 000$'
+        - '&fNiveau 3 - &b5 000 000 TNT'
+        - '&f  - Prix: &a6 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 21
+    Warps:
+      Max-Level: 3
+      warp-limit:
+        level-1: 3
+        level-2: 4
+        level-3: 5
+      Cost:
+        level-1: 1000000
+        level-2: 2000000
+        level-3: 3000000
+      DisplayItem:
+        Name: '&bAcheter des Warps'
+        Type: EYE_OF_ENDER
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Permet d''augmenter la limite de'
+        - '&7warp de Faction'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b3 warps'
+        - '&f  - Prix: &a1 000 000$'
+        - '&fNiveau 2 - &b4 warps'
+        - '&f  - Prix: &a2 000 000$'
+        - '&fNiveau 3 - &b5 warps'
+        - '&f  - Prix: &a3 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 24
+    Chest:
+      Max-Level: 3
+      Chest-Size:
+        # This is rows
+        level-1: 2
+        level-2: 3
+        level-3: 4
+      Cost:
+        level-1: 1000000
+        level-2: 2000000
+        level-3: 3000000
+      DisplayItem:
+        Name: '&bAméliorer le /f chest'
+        Type: CHEST
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Augmenter la taille du /f chest.'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b4 lignes'
+        - '&f  - Prix: &a1 000 000$'
+        - '&fNiveau 2 - &b5 lignes'
+        - '&f  - Prix: &a2 000 000$'
+        - '&fNiveau 3 - &b6 lignes'
+        - '&f  - Prix: &a3 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 20
+    Members:
+      Max-Level: 3
+      Members-Limit:
+        level-1: 5 # The Number Of Members It Will Increase By
+        level-2: 10
+        level-3: 15
+      Cost:
+        level-1: 1000000
+        level-2: 2000000
+        level-3: 3000000
+      DisplayItem:
+        Name: '&bAugmenter la limite de membres'
+        Type: PAPER
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Augmenter le nombre maximum'
+        - '&7de membres dans votre Faction'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b5 membre supplémentaire'
+        - '&f  - Prix: &a1 000 000$'
+        - '&fNiveau 2 - &b10 membre supplémentaire'
+        - '&f  - Prix: &a2 000 000$'
+        - '&fNiveau 3 - &b15 membre supplémentaire'
+        - '&f  - Prix: &a3 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 40
+    Armor:
+      Max-Level: 3
+      Armor-HP-Drop:
+        # HP Drop is in percent so .10 would mean it would drop 10% of the damage to the armor
+        level-1: 0.1
+        level-2: 0.15
+        level-3: 0.2
+      Cost:
+        level-1: 1000000
+        level-2: 2000000
+        level-3: 3000000
+      DisplayItem:
+        Name: '&bRenforcer l''armure'
+        Type: DIAMOND_CHESTPLATE
+        Texture: '' # Hash of skull here from minecraft-heads.com
+        Lore:
+        - '&7Permet de réduire les dégats reçus par l''armure'
+        - ''
+        - '&bNiveau'
+        - '&fVotre Faction est niveau: &b{level}'
+        - ''
+        - '&bListe des niveaux'
+        - '&fNiveau 1 - &b0.10%'
+        - '&f  - Prix: &a1 000 000$'
+        - '&fNiveau 2 - &b0.15%'
+        - '&f  - Prix: &a2 000 000$'
+        - '&fNiveau 3 - &b0.20%'
+        - '&f  - Prix: &a3 000 000$'
+        - ''
+        - '&bClique-ici pour &aAméliorer'
+        Slot: 4

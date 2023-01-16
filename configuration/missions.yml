@@ -1,0 +1,137 @@
+# ###########################################################
+# +------------------------------------------------------+ #
+# |                Faction Missions                      | #
+# +------------------------------------------------------+ #
+# ###########################################################
+MissionGUISize: 4
+Missions-Enabled: true
+Missions-GUI-Title: '&cMissions'
+Tribute-GUI-Title: '&cMissions Attribus'
+MaximumMissionsAllowedAtOnce: 1
+Allow-Cancellation-Of-Missions: true
+CancellableMissionLore: '&bClique-droit pour annuler la mission &a1000$&b.'
+CancelMissionCost: 1000
+PayCancelMissionCostWithPoints: false
+FactionPaysCancelMissionCost: true
+Mission-Progress-Format: '&bProgression: &f{progress}&7/&e{total}'
+Randomization:
+  Enabled: false
+  Start-Item:
+    # Allowed means that they are under maximum allowed missions at one AND if applicable they have not completed every mission more than once
+    Allowed:
+      Name: '&aDémarrer'
+      Material: GREEN_STAINED_GLASS_PANE
+      Lore: '&2Démarrer une nouvelle mission !'
+    Disallowed:
+      # Placeholder %reason% supported throughout this section
+      Name: '&4Erreur'
+      Material: GRAY_STAINED_GLASS_PANE
+      Lore:
+      - '&4%reason%'
+    # in default configuration you will need to change the GUI size to 4 and for best results change the fillitem rows to 4 as well.
+    Slot: 31
+
+DenyMissionsMoreThenOnce: true # this setting to true, means that if they complete a mission they cannot redo the same mission
+DeniedMissionMaterial: BARRIER
+DeniedMissionExtraLore: '&bFaction &8» &cTu as déjà complété cette mission.'
+MissionDeadline: 86400000 # in milliseconds, 0 disables it
+DeadlineMissionLore: '&fTemps restant : &c%1$s&f.'
+Prestige: # requires DenyMissionsMoreThenOnce = true
+  Enabled: false
+  CongratulationMessage: '&bFaction &8» &fVotre faction vient de valider l''ensemble
+    des &amissions &f!'
+  Reward:
+    Commands:
+    - f powerboost faction %faction% 1
+
+# Mission Types: KILL, MINE, PLACE, FISH, TAME, ENCHANT, CONSUME, BREED, TRIBUTE
+Missions:
+  animaltaming:
+    Slot: 20
+    Material: BONE
+    Name: '&bApprivoiser &c100 &banimaux'
+    Lore:
+    - ''
+    - '&bRécompense: &a100 points Faction'
+    Mission:
+      Type: TAME
+      EntityType: ALL
+      Amount: 100
+    Reward:
+      Commands:
+      - f points add %faction% 100
+  consume:
+    Slot: 24
+    Material: COOKED_BEEF
+    Name: '&bManger &c100 &bsteaks'
+    Lore:
+    - ''
+    - '&bRécompense: &a100 points Faction'
+    Mission:
+      Type: CONSUME
+      # "ALL" can also be used for item
+      Item: COOKED_BEEF
+      Amount: 100
+    Reward:
+      Commands:
+      - f points add %faction% 100
+  FillItem:
+    Name: ' '
+    Lore:
+    - ' '
+    Material: BLACK_STAINED_GLASS_PANE
+    Rows: 4
+  sugarcane:
+    Slot: 11
+    Material: SUGAR_CANE
+    Name: '&bRécolter &c10 000 &bSugar Cane'
+    Lore:
+    - ''
+    - '&bRécompense: &a100 points Faction'
+    Mission:
+      Type: MINE
+      Material: SUGAR_CANE_BLOCK
+      Amount: 10000
+    Reward:
+      Commands:
+      - f points add %faction% 100
+  zombie:
+    Slot: 15
+    Material: ROTTEN_FLESH
+    Name: '&bTuer &c1 000 &bZombies'
+    Lore:
+    - ''
+    - '&bRécompense: &a100 points Faction'
+    Mission:
+      Type: KILL
+      EntityType: ZOMBIE
+      Amount: 1000
+    Reward:
+      Commands:
+      - f points add %faction% 100
+  fishing:
+    Slot: 13
+    Material: FISHING_ROD
+    Name: '&bPêcher &c100 &bpoissons'
+    Lore:
+    - ''
+    - '&bRécompense: &a100 points Faction'
+    Mission:
+      Type: FISH
+      Amount: 100
+    Reward:
+      Commands:
+      - f points add %faction% 100
+  enchant:
+    Slot: 22
+    Material: BOOK
+    Name: '&bEnchanter &c100 &bitems'
+    Lore:
+    - ''
+    - '&bRécompense: &a100 points Faction'
+    Mission:
+      Type: ENCHANT
+      Amount: 100
+    Reward:
+      Commands:
+      - f points add %faction% 100
