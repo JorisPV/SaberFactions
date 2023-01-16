@@ -2,11 +2,13 @@
 
 ### Traduction en français du plugin SaberFactions 4.0.1-RC
 
-https://www.spigotmc.org/resources/saberfactions-1-8-1-16-x-discord-saber-pw-the-complete-factions-solution.69771/
+https://www.spigotmc.org/resources/saberfactions-1-8-1-19-x-discord-saberdev-org-the-complete-factions-solution.69771/
+https://github.com/SaberLLC/Saber-Factions
 
 # % de Traduction
 
-- En cours d'update vers la version 4.0.1-RC
+~99% de traduction
+Il manque principalement des commandes Administrateurs, cela sera traduit dans le futur.
 
 # Que faire si je remarque une erreur?
 
