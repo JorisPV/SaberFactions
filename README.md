@@ -2,8 +2,8 @@
 
 ### Traduction en français du plugin SaberFactions 4.0.1-RC
 
-https://www.spigotmc.org/resources/saberfactions-1-8-1-19-x-discord-saberdev-org-the-complete-factions-solution.69771/
-https://github.com/SaberLLC/Saber-Factions
+- https://www.spigotmc.org/resources/saberfactions-1-8-1-19-x-discord-saberdev-org-the-complete-factions-solution.69771/
+- https://github.com/SaberLLC/Saber-Factions
 
 # % de Traduction
 
